@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from './pages/Login/Login';
-import Route from './Routes/route';
+import { RouterProvider } from "react-router-dom";
 import MainRoute from './Routes/mainRoutes';
 
 const routes = MainRoute()

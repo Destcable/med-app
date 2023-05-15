@@ -1,6 +1,11 @@
 import * as React from "react";
-import { createBrowserRouter, RouteObject, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Login from "../pages/Login/Login";
+
+interface RouteProps { 
+    pathURL: string, 
+    elementURL: React.ReactNode
+}
 
 class Route {
     routesURL: any;
