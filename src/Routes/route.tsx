@@ -1,6 +1,5 @@
 import * as React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Login from "../pages/Login/Login";
 
 interface RouteProps { 
     pathURL: string, 
@@ -8,16 +7,14 @@ interface RouteProps {
 }
 
 class Route {
-    routesURL: any;
 
     setRoutes(pathURL: string, elementURL: React.ReactNode) { 
-        const URLs = createBrowserRouter([ 
+        return createBrowserRouter([ 
             { 
               path: pathURL,
               element: elementURL
             }
         ])
-        return URLs;
     };
     
     getRoutes(URL: any) { 
